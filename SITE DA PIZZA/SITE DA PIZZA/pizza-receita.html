@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>
+		Receita de pizza
+	</title>
+	<link rel="stylesheet" href="pizza_css\pizza_style.css"/>
+</head>
+<script type="text/javascript">
+	function mudaParte(parte){
+		document.getElementById("iframe").src="pizza-receita-2.html#"+parte;
+	}
+</script>
+
+<body>
+	<header>
+		<h1>Como fazer uma pizza</h1>
+		<h3>Aqui teremos como fazer uma pizza do zero<br/>
+		Apenas clique em uma das imagens para os detalhes daquela etapa específica</h3>
+	<nav id="menu">
+		<ul class="receita">
+			<li><a href="Pizza-story.html">História da pizza</a></li>
+			<li><a href="Pizza-pizzas.html">História da pizza</a></li>
+			<li><a href="pizza-receita.html">Receita de pizza</a></li>
+</ul>	
+</nav>
+</header>
+<section id="fotos">
+<figure class="receita" onclick="mudaParte('massa')">
+	<img src="pizza_imagens\pizza1n.jpeg">
+</figure>
+
+<figure class="receita" onclick="mudaParte('molho')">
+	<img src="pizza_imagens\pizza2n.jpeg">
+</figure>
+
+<figure class="receita" onclick="mudaParte('recheio')">
+	<img src="pizza_imagens\pizza3n.jpeg">
+</figure>
+
+<figure class="receita" onclick="mudaParte('montagem')">
+	<img src="pizza_imagens\pizza4n.jpeg">
+</figure>
+</section>
+
+<aside id="texto">
+	<iframe src="pizza-receita-2.html" id="iframe"></iframe>
+</aside>
+
+</body>
